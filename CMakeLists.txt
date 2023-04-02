@@ -12,7 +12,7 @@ endif()
 project ("OperationSimulation")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (OperationSimulation "out/src/OperationSimulation.cpp" "out/include/OperationSimulation.h")
+add_executable (OperationSimulation "src/main.cpp" "include/operations.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET OperationSimulation PROPERTY CXX_STANDARD 20)
